@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	</head>
+	<body>
+	<div class="bod">
+	<button type="button" id="btn">Click me</button>
+	<p id="dis"></p>
+	</div>
+	<script>
+		let but=document.getElementById("btn")
+		
+			but.addEventListener("click",random);
+		
+		function random(){
+			var a=Math.ceil(Math.random()*255);
+			var c=Math.ceil(Math.random()*255);
+			var d=Math.ceil(Math.random()*255);
+			document.body.style.backgroundColor = "rgb" + "(" + a +"," + c + "," + d +")";
+			
+		}
+	</script>
+	</body>
+</html>
